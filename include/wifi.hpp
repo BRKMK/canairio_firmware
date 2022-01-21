@@ -10,6 +10,7 @@
 #include <cloud_anaire.hpp>
 #include <cloud_hass.hpp>
 #include <cloud_influxdb.hpp>
+#include <cloud_thingspeak.hpp>
 
 #define PUBLISH_INTERVAL 30       // publish to cloud each 30 seconds
 #define WIFI_RETRY_CONNECTION 30  // 30 seconds wait for wifi connection
