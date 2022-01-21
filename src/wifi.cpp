@@ -61,7 +61,9 @@ void otaInit() {
 void wifiCloudsInit() {
     influxDbInit();    
     anaireInit();
+    thingspeakInit();
     hassInit();
+
 }
 
 void wifiConnect(const char* ssid, const char* pass) {
@@ -121,6 +123,7 @@ void wifiLoop() {
     }
     anaireLoop();
     hassLoop();
+    thingspeakLoop();
     influxDbLoop();  // influxDB publication
 }
 
